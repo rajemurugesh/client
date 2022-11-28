@@ -76,14 +76,14 @@ const Login = ({ setLoginUser}) => {
 
   <p className="forgetpassword text-right">
             {/* <a href="/forgetpassword">Forget Password</a><br/>  */}
-            <Link to={'/forgetpassword'}>Forgetpassword</Link>
+            <Link to={'/forgotpassword'}>Forgotpassword</Link>
             </p>
 
                 <button type="submit" className="btn btn-outline-primary w-100">
                   Login
                 </button>
                 
-                </form>
+               
 
                 <div className="mb-3"> 
                 <h4 className="text-center">or</h4>
@@ -92,9 +92,7 @@ const Login = ({ setLoginUser}) => {
               <Link to="/register">
           <button type="submit" className="btn btn-outline-primary w-100">Register</button>
         </Link>
-
-              {/* <div><button onClick={handleSubmit} type='button' className="btn btn-outline-primary w-100">Sign Up</button></div> */}
-              {/* <button type="submit" className="btn btn-outline-primary w-100" onClick={() => Navigate.push("/register")}>Signup</button> */}
+        </form>
             </div>
     );
 }

@@ -4,7 +4,7 @@ import Login from './Components/Login/login';
 import Register from './Components/Register/register';
 import Homepage from "./Components/Homepage/homepage";
 import Navbar from "./Components/Navbar/navbar";
-import Forgetpassword from "./Components/Forgetpassword/forgetpassword";
+import Forgotpassword from "./Components/Forgotpassword/forgotpassword";
 import Resetpassword from "./Components/Resetpassword/resetpassword";
 import { useState } from "react";
 
@@ -30,7 +30,7 @@ const App = () => {
 
           <Route path="/register" element={<Register />} />
 
-          <Route path="/forgetpassword" element={<Forgetpassword />} />  
+          <Route path="/forgotpassword" element={<Forgotpassword />} />  
 
           <Route path="/resetpassword/:token" element={<Resetpassword />} />
 

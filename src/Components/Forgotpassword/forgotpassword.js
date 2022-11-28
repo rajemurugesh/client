@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from "axios"
 import { useNavigate , Link} from "react-router-dom";
 
-const Forgetpassword = () => {
+const Forgotpassword = () => {
 
   const Navigate = useNavigate()
 
@@ -21,7 +21,7 @@ const Forgetpassword = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    axios.post("http://localhost:3005/forgetpassword", user)
+    axios.post("http://localhost:3005/forgotpassword", user)
     .then (res=>  {
        alert(res.data.message)
        console.log(res)
@@ -65,4 +65,4 @@ const Forgetpassword = () => {
      );
 }
 
-export default Forgetpassword;
+export default Forgotpassword;
